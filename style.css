@@ -1,86 +1,68 @@
-body {
-    background-color: darkgray;
-    display: grid;
-    grid-row-gap: 5px;
-    grid-template-columns: 5% 1fr 1fr 5%;
-    grid-template-rows: 2em auto max-content auto;
-    grid-template-areas:
-    "nav nav nav nav"
-        "hd hd hd hd"
-        ". main  main . "
-        "footer footer footer footer";
-    padding: 0em 0em;
+* {
+  box-sizing: border-box;
 }
 
-nav {
-    grid-area: nav;
-    position: fixed;
-    top: 0; 
-    width: 100%; 
-    padding: 1em;
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
 }
 
-header {
-    grid-area: hd;
+[class*="col-"] {
+  float: left;
+  padding: 15px;
 }
 
-main {
-    grid-area: main;
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+body{
+    background-color: #393535;
+    margin: 0;
+    padding: 0;
+    color: white
 }
 
-
-
-footer {
-    grid-area: footer;
-
+.header {
+  background-color: #242222;
+  color: #ffffff;
+  padding: 10px;
+}
+.header a{
+    text-decoration: none;
+    color: white
+}
+.profile img{
+    width: 100%;
+}
+ol{
+  list-style: circle;
+    cursor: pointer
 }
 
-
-
-.landingflexbox {
-    display: grid;
-grid-template-columns: 60% 40%;
-grid-template-rows: max-content;
-
-
-    
+.aside {
+  background-color: hsl(0, 0%, 40%);
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+}
+iframe{
+    width:100%;
+    height: 300px
 }
 
-.griditem {
-    margin: 0.5em;
-    margin-bottom: 2em;
-padding: 1em;
-border:1px solid black;
-border-radius: 25px;
-
+/* For desktop: */
+.col-1 {width: 25%;}
+.col-2 {
+    width: 35%;
+    margin-top: 15px;
+    background-color: hsl(0, 0%, 40%);
 }
-
-.landingillustration
-{
-    max-width: 100%;
-}
-
-.introtext {
-color: ;
-    background-color: lightgray;
-}
-
-
-nav {
-    background-color: black;
-    color: white;
-}
-
-.singlepersongrid {
-    display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-grid-template-rows: auto auto;
-}
-
-.personphoto {
-max-width: 100%;
-display: block;
-margin-left: auto;
-margin-right: auto;
-border-radius: 25px;
+.col-3 {width: 40%;}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
 }

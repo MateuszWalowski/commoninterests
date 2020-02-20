@@ -1,73 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>common interest </title>
-  </head>
-  <body>
-    <nav>
-      <a href="/">Home</a>
-    </nav>
-
-    <header>
-      <div class="landingflexbox ">
-
-
-
-      <div class="griditem">
-          <img class="landingillustration" src="./images/placeholderbig.png">
-      </div>
-
-
-          <div class="griditem introtext">
-              <p>
-            introduction
-              </p>
-              <p>
-Quotes           
-<blockquote>quote 1 <br> quote 2 <br> quote 3 </blockquote>  </p>
-          </div>
-        </div>
-  </header>
-
-  <main>
-
-    <template id="songtemplate">
-
-
-      <div class="singlepersongrid">
-        <div class="griditem" style="grid-row-start:1; grid-row-end: 3; grid-column: 1;">
-        <img class="personphoto" alt="" src="">
-
-      <p class="name">person name </p>
-      <p class="hashtags">hashtags</p>
+    <title></title>
+</head>
+<body>
+    <div class="header">
+        <a href="">home</a>
     </div>
 
-    <div class="griditem" style="grid-row-start:1; grid-row-end: 3; grid-column: 2;">
-      <p class="tracks">songname</p>
+
+<div class="row">
+  <div class="col-1 profile">
+    <img src="default.jpg">
+    <h2>name</h2>
+    <p>hashtag<br>#<br>#</p>
+  </div>
+
+  <div class="col-2">
+    <h3>my playlist</h3>
+            <ol>
+                <li>test</li>
+                <li id="2" onclick="loadVideo(this.id)">angel of small death and the codeine scene - hozier</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+                <li>test</li>
+            </ol>
+  </div>
+
+  <div class="col-3 right">
+    <div class="aside">
+        <h3>what music means to me</h3>
+      <p>test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test </p>
+         <iframe id="player1" src="https://www.youtube.com/embed/jx0utuqQ-tE"></iframe> 
     </div>
-
-    <div class="griditem" style="grid-row-start:1; grid-row-end: 2; grid-column: 3;">
-
-      <p class="meaning">whatmusicmeanstome</p>
-    </div>
-
-        <div class="griditem" style="grid-row-start:2; grid-column: 3;">
-
-      <p class="meaning">video</p>
-    </div>
-
+  </div>
 </div>
-    </template>
-
-  </main>
-
-
 
     <script src="script.js"></script>
-
-  </body>
+</body>
 </html>

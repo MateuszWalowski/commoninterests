@@ -1,35 +1,28 @@
-
-const link = "https://spreadsheets.google.com/feeds/list/1duE6JJmVm82BpPsfYmEvjjjDrXWAHzuINMFnw1lTUjg/od6/public/values?alt=json";
+const link = "https://spreadsheets.google.com/feeds/list/1fj4-OQKzaFXX5ptgOnnXImXkKOSpYKNyeVcumszGcB8/od6/public/values?alt=json";
 
 window.addEventListener("DOMContentLoaded", getData);
 
 function getData() {
 fetch(link)
 .then(res => res.json())
-.then(handleData)
-}
+.then(handleData);
 
+}
 
 function handleData(data) {
     const myData = data.feed.entry;
     console.log("myData - console");
     console.log(myData);
+    myData.forEach(songObjects);
 
-    myData.forEach(oneperson);
 }
-
-
-
-
-function oneperson(person) {
-    console.log("it works");
-    const template = document.querySelector("#songtemplate").content;
-    const copy = template.cloneNode(true);
-    copy.querySelector(".name").textContent = person.gsx$name.$t;
-    copy.querySelector(".hashtags").textContent = person.gsx$hashtags.$t;
-    copy.querySelector(".meaning").textContent = person.gsx$meaning.$t;
-    copy.querySelector(".tracks").textContent = person.gsx$tracks.$t;
-    copy.querySelector(".personphoto").alt = person.gsx$name.$t;
-    copy.querySelector(".personphoto").src = person.gsx$imagelink.$t;
-    document.querySelector("main").appendChild(copy);
+var songs=[];
+function songObjects(videoid){
+    var songObject={};
+    console.log(videoid.id+"-"+videoid.gsx$link)
+    
+}
+function loadVideo(videoid){
+    document.getElementById("player1").src="https://www.youtube.com/embed/"+videoid.gsx$link;
+    console.log(videoid.gsx$link)
 }

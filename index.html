@@ -1,73 +1,221 @@
+<!--
+    daniel
+        hashtags
+        sentences
+        links
+    matt
+        hashtags
+    PLAY GIF - replace placeholder
+    home page
+-->
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>common interest </title>
-  </head>
-  <body>
-    <nav>
-      <a href="/">Home</a>
-    </nav>
+    <link rel="stylesheet" href="https://use.typekit.net/qhh8hdh.css">
+    <title>CIA MUSIC</title>
+</head>
 
-    <header>
-      <div class="landingflexbox ">
+<body>
+    <div class="header">
+        <a href="#home">Home</a>
+        <a href="#daniel">Daniel</a>
+        <a href="#matt">Matt</a>
+        <a href="#nikola">Nikola</a>
+        <a href="#lana">Lana</a>
+        <a href="#jose">Jose</a>
+    </div>
 
-
-
-      <div class="griditem">
-          <img class="landingillustration" src="./images/placeholderbig.png">
-      </div>
-
-
-          <div class="griditem introtext">
-              <p>
-            introduction
-              </p>
-              <p>
-Quotes           
-<blockquote>quote 1 <br> quote 2 <br> quote 3 </blockquote>  </p>
-          </div>
+    <div class="row" id="home">
+        <div class="col-half">
+            <img src="logo.png" alt="CIA logo" id="logo">
         </div>
-  </header>
 
-  <main>
+        <div class="col-topright">
+            <p>"Music is a part of our everyday lives and it has a significant impact on all of us. It has the power to change our mood - our world."</p>
+        </div>
 
-    <template id="songtemplate">
-
-
-      <div class="singlepersongrid">
-        <div class="griditem" style="grid-row-start:1; grid-row-end: 3; grid-column: 1;">
-        <img class="personphoto" alt="" src="">
-
-      <p class="name">person name </p>
-      <p class="hashtags">hashtags</p>
+        <div class="col-rightone">
+            <div class="news">
+                <h3>Discover New</h3>
+                <p>Take a short quiz and discover new songs!</p><br>
+                <button>LET'S DO IT!</button>
+            </div>
+        </div>
+        <div class="col-righttwo">
+            <div class="news">
+                <h3>Music News</h3>
+                <p>Would you like to know what's new in the world of music? Browse our selection of news and stay on track!</p><br>
+                <button>FIND OUT!</button>
+            </div>
+        </div>
     </div>
 
-    <div class="griditem" style="grid-row-start:1; grid-row-end: 3; grid-column: 2;">
-      <p class="tracks">songname</p>
+    <div class="row" id="daniel">
+        <div class="col-1 profile">
+            <img src="daniel2.png" alt="Photo Of Daniel" class="ProfileImg">
+            <h2>Daniel Bajtoš</h2>
+            <p>#<br>#<br>#</p>
+        </div>
+
+        <div class="col-2">
+            <h3>My Playlist</h3>
+            <ol>
+                <li id="kXYiU_JCYtU" onclick="loadVideoDaniel(this.id)">Numb - Linkin Park</li>
+                <li id="CfkxLRuSteI" onclick="loadVideoDaniel(this.id)">Antisocial - Ed Sheeran & Travis Scott</li>
+                <li id="uC2TFiQJ-Mw" onclick="loadVideoDaniel(this.id)">Go For Broke (ft. James Arthur) - Machine Gun Kelly</li>
+                <li id="WGzhlLCdAVo" onclick="loadVideoDaniel(this.id)">Hurt Feelings - Mac Miller</li>
+                <li id="ScNNfyq3d_w" onclick="loadVideoDaniel(this.id)">Castle Of Glass - Linkin Park</li>
+                <li id="kh5x_tMGEh0" onclick="loadVideoDaniel(this.id)">RNP (ft. Anderson .Paak) - YBN Cordae</li>
+                <li id="x8IToLUJStg" onclick="loadVideoDaniel(this.id)">Sidewalks (ft. Kendrick Lamar) - The Weeknd</li>
+                <li id="ylLEEGHg1tY" onclick="loadVideoDaniel(this.id)">Can I Kick It - Logic</li>
+                <li id="RYnFIRc0k6E" onclick="loadVideoDaniel(this.id)">Rollin’ - Limp Bizkit</li>
+                <li id="_Yhyp-_hX2s" onclick="loadVideoDaniel(this.id)">Lose Yourself - Eminem</li>
+            </ol>
+        </div>
+
+        <div class="col-3 right">
+            <div class="aside">
+                <h3>What Music Means To Me</h3>
+                <p>this is replacement text this is replacement text this is replacement text this is replacement text this is replacement text this is 
+                </p>
+                <iframe id="danielPlayer" src="https://www.youtube.com/embed/kXYiU_JCYtU"></iframe>
+            </div>
+        </div>
     </div>
 
-    <div class="griditem" style="grid-row-start:1; grid-row-end: 2; grid-column: 3;">
+    <div class="row" id="matt">
+        <div class="col-1 profile">
+            <img src="matt2.png" alt="Picture Of Matt" class="ProfileImg">
+            <h2>Mateusz Walkowski</h2>
+            <p>#<br>#<br>#</p>
+        </div>
 
-      <p class="meaning">whatmusicmeanstome</p>
+        <div class="col-2">
+            <h3>My Playlist</h3>
+            <ol>
+                <li id="CU70A4YgkuQ" onclick="loadVideoMatt(this.id)">Dead Lines - Skinny Puppy</li>
+                <li id="CWOtk18JpT0" onclick="loadVideoMatt(this.id)">Next War - Front Line Assembly</li>
+                <li id="Y1stAP0GLrc" onclick="loadVideoMatt(this.id)">Crowning Glory - Will</li>
+                <li id="3qIXIHAmcKU" onclick="loadVideoMatt(this.id)">Bullet - Covenant</li>
+                <li id="7ziggF0f27o" onclick="loadVideoMatt(this.id)">Military Fashion Show - And One</li>
+                <li id="PGiuajhBv7s" onclick="loadVideoMatt(this.id)">The Fall - Gary Numan</li>
+                <li id="jR-29lnXKas" onclick="loadVideoMatt(this.id)">Finite Years - Decree</li>
+                <li id="FTL8NtqGdw4" onclick="loadVideoMatt(this.id)">Chrome - VNV Nation</li>
+                <li id="ZEULHohpjuY" onclick="loadVideoMatt(this.id)">Lies To Tell - Leæther Strip</li>
+                <li id="UrOcxD3IWW0" onclick="loadVideoMatt(this.id)">Alive In New Light - Iamx</li>
+            </ol>
+        </div>
+
+        <div class="col-3 right">
+            <div class="aside">
+                <h3>What Music Means To Me</h3>
+                <p>Music helps me wind down when I am feeling down and forget about my problems.</p>
+                <iframe id="mattPlayer" src="https://www.youtube.com/embed/CU70A4YgkuQ"></iframe>
+            </div>
+        </div>
     </div>
 
-        <div class="griditem" style="grid-row-start:2; grid-column: 3;">
+    <div class="row" id="nikola">
+        <div class="col-1 profile">
+            <img src="nikola2.png" alt="Picture Of Nikola" class="ProfileImg">
+            <h2>Nikola Vojtkova</h2>
+            <p>#plantlover<br>#catperson<br>#artlover</p>
+        </div>
 
-      <p class="meaning">video</p>
+        <div class="col-2">
+            <h3>my playlist</h3>
+            <ol>
+                <li id="EgBJmlPo8Xw" onclick="loadVideoNikola(this.id)">Everything I Wanted – Billie Eilish</li>
+                <li id="lH1F6m3slrQ" onclick="loadVideoNikola(this.id)">Ilomilo – Billie Eilish</li>
+                <li id="C9LPQmkao8c" onclick="loadVideoNikola(this.id)">Wild Roses – Of Monsters And Men</li>
+                <li id="KIibu7GHkxw" onclick="loadVideoNikola(this.id)">Gods & Monsters – Lana Del Rey</li>
+                <li id="voWyfUMDgBA" onclick="loadVideoNikola(this.id)">Smoke & Mirrors – Konoba</li>
+                <li id="JCT_lgJ5eq8" onclick="loadVideoNikola(this.id)">Waiting Game – Banks</li>
+                <li id="8INOzcCGBzY" onclick="loadVideoNikola(this.id)">Be There – Seafret</li>
+                <li id="wK-8TCDrbV8" onclick="loadVideoNikola(this.id)">I Think I’m Okay – Machine Gun Kelly</li>
+                <li id="XS088Opj9o0" onclick="loadVideoNikola(this.id)">Frozen – Madonna</li>
+                <li id="-v9Pobv7y8Y" onclick="loadVideoNikola(this.id)">No Witness - Lp</li>
+            </ol>
+        </div>
+
+        <div class="col-3 right">
+            <div class="aside">
+                <h3>What Music Means To Me</h3>
+                <p>Music is a get away solution for me when i really need to escape reality. It helps me get things done when i have 0 motivation and sparks joy in every nerve of my body.</p>
+                <iframe id="nikolaPlayer" src="https://www.youtube.com/embed/EgBJmlPo8Xw"></iframe>
+            </div>
+        </div>
     </div>
 
-</div>
-    </template>
+    <div class="row" id="lana">
+        <div class="col-1 profile">
+            <img src="lana2.png" alt="Picture Of Lana" class="ProfileImg">
+            <h2>Lana</h2>
+            <p>#cozy<br>#subjective<br>#baddj</p>
+        </div>
 
-  </main>
+        <div class="col-2">
+            <h3>My Playlist</h3>
+            <ol>
+                <li id="RRKXQE52l2Q" onclick="loadVideoLana(this.id)">A Little While - Yellow Days </li>
+                <li id="6mUDEBjFgm4" onclick="loadVideoLana(this.id)">Angel Of Small Death And The Codeine Scene - Hozier</li>
+                <li id="8hwKqw4nbo8" onclick="loadVideoLana(this.id)">Runaway - Mishaal</li>
+                <li id="XlfCfEfbO48" onclick="loadVideoLana(this.id)">In The Woods Somewhere - Hozier</li>
+                <li id="wGF7PswOENQ" onclick="loadVideoLana(this.id)">The Night We Met - Lord Huron</li>
+                <li id="ecw1sMKq5ME" onclick="loadVideoLana(this.id)">El Diablo - Machine Gun Kelly</li>
+                <li id="krhh4Jmiru8" onclick="loadVideoLana(this.id)">Ni Bien Ni Mal - Bad Bunny</li>
+                <li id="6jbiWhhvyPw" onclick="loadVideoLana(this.id)">Vow - Tender</li>
+                <li id="oIm-GQml3ew" onclick="loadVideoLana(this.id)">Floor 13 - Machine Gun Kelly</li>
+                <li id="eHjxJItKbLQ" onclick="loadVideoLana(this.id)">Near Dark - Burial</li>
+            </ol>
+        </div>
 
+        <div class="col-3 right">
+            <div class="aside">
+                <h3>What Music Means To Me</h3>
+                <p>For me, it was always a comfort thing - I have music playing in the bus, while i'm walking, working, resting. I don’t like silence and I enjoy the distraction.</p>
+                <iframe id="lanaPlayer" src="https://www.youtube.com/embed/RRKXQE52l2Q"></iframe>
+            </div>
+        </div>
+    </div>
 
+    <div class="row" id="jose">
+        <div class="col-1 profile">
+            <img src="jose2.png"  alt="Picture Of Jose" class="ProfileImg">
+            <h2>Josephine Schlegel</h2>
+            <p>#sleepaholic<br>#gettinwavy<br>#makeuplover</p>
+        </div>
+
+        <div class="col-2">
+            <h3>My Playlist</h3>
+            <ol>
+                <li id="M97vR2V4vTs" onclick="loadVideoJose(this.id)">Waiting All Night - Rudimental ft. Ella Eyre</li>
+                <li id="ISMwH1S-jsM" onclick="loadVideoJose(this.id)">Wasted Love - Benzel, Stevie Neale</li>
+                <li id="L9pKQUx3w1c" onclick="loadVideoJose(this.id)">Do Me A Favour - Arctic Monkeys</li>
+                <li id="UUmH4rr8vq0" onclick="loadVideoJose(this.id)">No Tomorrow - Orson</li>
+                <li id="jEpkzULYcYw" onclick="loadVideoJose(this.id)">Blk & Blu - Chase & Status</li>
+                <li id="Sw-ko6aINI4" onclick="loadVideoJose(this.id)">White Blank Page - Mumford & Sons</li>
+                <li id="uWeqeQkjLto" onclick="loadVideoJose(this.id)">1973 - James Blunt</li>
+                <li id="x3xYXGMRRYk" onclick="loadVideoJose(this.id)">Candy - Paolo Nutini</li>
+                <li id="pbMwTqkKSps" onclick="loadVideoJose(this.id)">When The Party’s Over - Billie Eilish</li>
+                <li id="80J2YroXH3g" onclick="loadVideoJose(this.id)">The One - Jorja Smith</li>
+            </ol>
+        </div>
+
+        <div class="col-3 right">
+            <div class="aside">
+                <h3>What Music Means To Me</h3>
+                <p>Music, to me, means good times and gatherings with my friends.
+                    Music is a way to express one's feelings without words.
+                    Music is a feeling and can influence my emotions.
+                </p>
+                <iframe id="josePlayer" src="https://www.youtube.com/embed/M97vR2V4vTs"></iframe>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
-
-  </body>
-</html>
+</body></html>

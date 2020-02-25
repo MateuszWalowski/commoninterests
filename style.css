@@ -1,211 +1,138 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.row {
-    margin: 3%;
+.row{margin: 0 5%
 }
-
 .row::after {
-    content: "";
-    clear: both;
-    display: block;
+  content: "";
+  clear: both;
+  display: block;
 }
-
 
 [class*="col-"] {
-    float: left;
-    padding: 15px;
-    display: inline-block;
-    margin: auto; 
-}
-[class*="col-"]:hover {
-    background-color:darkgreen;
-}
-html {
-    scroll-behavior: smooth;
+  float: left;
+  padding: 15px;
 }
 
-body {
-    background-color: #242424;
+html {
+  font-family: "Lucida Sans", sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #393535;
     margin: 0;
     padding: 0;
     color: white
 }
 
-p {
-    font-family: titular, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 25px;
-}
-
-li {
-    font-family: titular, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 25px;
-    line-height: 40px;
-}
-
-h3 {
-    font-family: titular, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 40px;
-    text-align: center;
-    margin-bottom: 15px;
-    margin-top: 15px;
-}
-
-h1 {
-    font-family: titular, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;
-    margin-bottom: 15px;
-    margin-top: 15px;
-}
-
-h2 {
-    font-family: titular, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    margin-bottom: 15px;
-    margin-top: 15px;
-    font-size: 45px;
-}
-
 .header {
-    background-color: hsl(0, 0%, 40%);
-    color: #ffffff;
-    padding: 10px;
-    text-align: center;
-    margin: 20px;
+  background-color: hsl(0, 0%, 40%);
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  margin: 20px;
 }
 
 .header a {
-    text-decoration: none;
-    color: white;
-    padding: 0 3%;
-    font-family: titular, sans-serif;
-    font-weight: 500;
-    letter-spacing: 3px;
-    font-style: normal;
-    font-size: 25px;
+  text-decoration: none;
+  color: white;
+  padding: 0 3%;
+  font-family: titular, sans-serif;
+  font-weight: 500;
+  letter-spacing: 3px;
+  font-style: normal;
 }
 .header a:hover{
-    color: darkgreen;
+  color: darkgreen;
 }
 .header:hover {
-    background-color: hsl(0, 0%, 45%);
+  background-color: hsl(0, 0%, 45%);
 }
-
-.profile img {
-    width: 330px;
- 
+.profile img{
+    width: 100%;
 }
+ol{
 
-ol {
     cursor: pointer
 }
-
-li:hover {
-    list-style-image: url('play.gif');
+li:hover{
+    list-style-image: url('buffer-small.gif');
 }
 
 .aside {
-    background-color: hsl(0, 0%, 40%);
-    padding: 15px;
-    color: #ffffff;
-    text-align: center;
-    font-size: 14px;
-    height: 515px;
+  background-color: hsl(0, 0%, 40%);
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
 }
-.news {
-     background-color: hsl(0, 0%, 40%);
-    padding: 15px;
-    color: #ffffff;
-    text-align: center;
-    font-size: 14px;
-    height: 350px;
-    
-}
-iframe {
-    width: 100%;
+iframe{
+    width:100%;
     height: 300px
 }
-
-button {
+button{
     border: none;
-    background-color: darkgreen;
+    background-color: darkred;
     color: white;
     padding: 5%;
-    border-radius: 20px;
+  border-radius: 20px;
 }
-
 /* For desktop: */
-.col-1 {
-    width: 20%;
-    height: 515px;
-    margin-top: 14px;
-    background-color: hsl(0, 0%, 40%);
-    padding: 15px;
-    margin-right: 15px;
-    text-align: center;
-    
-}
-.col-1 p{
-    line-height: 50px;
-    font-size: 31px;
-}
-
+.col-1 {width: 25%;}
 .col-2 {
     width: 35%;
-    margin-top: 14px;
+    margin-top: 15px;
     background-color: hsl(0, 0%, 40%);
-    height: 515px;
 }
-
-.col-3 {
-    width: 40%;
-}
-
-.col-half {
-    width: 50%
-}
-
-.col-topright {
-    width: 50%;
+.col-3 {width: 40%;}
+.col-half{width:50%}
+.col-topright{
+    width:50%;
     padding: 15px;
-    margin-top: 35px;
+    margin-top: 15px;
     background-color: hsl(0, 0%, 40%);
     font-size: 1.3em;
-    text-align: center;
-    
+  text-align: center;
 }
-.col-topright p {
-    font-size: 40px;
-    font-style: italic;
+.col-half img{width:100%}
+.col-rightone{width:25%}
+.col-righttwo{width:25%}
+
+.musicnews {
+border: black 1px solid;
+  display: grid;
+grid-template-columns: 40% 60%;
 }
 
-.col-half img {
-    width: 100%;
-    margin-top: -30px;
+.griditem {
+  padding: 1em;
+}
+.newsimage {
+  max-width: 80%;
+  display: block;
+  margin: auto;
+
 }
 
-.col-rightone {
-    width: 25%;
-}
 
-.col-righttwo {
-    width: 25%;
-}
+
 
 @media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
 
-    /* For mobile phones: */
-    [class*="col-"] {
-        width: 100%;
-    }
+  .musicnews {
+    display: grid;
+  grid-template-columns: 100%
+  }
+
+  .newsimage {
+    max-width: 60%;
+    display: block;
+    margin: auto;
+
+  } 
 }

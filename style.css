@@ -18,7 +18,7 @@
     float: left;
     padding: 15px;
     display: inline-block;
-    margin: auto;
+
 }
 
 html {
@@ -29,7 +29,7 @@ body {
     background-color: #000;
     margin: 0;
     padding: 0;
-    color: white
+    color: white;
 }
 .content{
     width: 100%;
@@ -107,7 +107,8 @@ h2 {
 }
 
 .profile img {
-    width: 100%;
+    width: 130%;
+    height: auto;
 
 }
 
@@ -121,11 +122,13 @@ li:hover {
 
 .aside {
     background-color: hsl(0, 0%, 40%);
-    padding: 15px;
+    padding: 0px;
     color: #ffffff;
     text-align: center;
     font-size: 14px;
     height: 515px;
+    margin-top: -30px;
+    height: 519px;
 }
 .news {
      background-color: hsl(0, 0, 0%, 40%);
@@ -152,7 +155,7 @@ button {
 /* For desktop: */
 .col-1 {
     width: 20%;
-    height: auto;
+    height: 519px;
     background-color: hsl(0, 0%, 40%);
     margin-right: 15px;
     text-align: center;

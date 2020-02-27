@@ -16,7 +16,7 @@ function showPeople(singlePerson){
     const template=document.querySelector("#personTemplate").content;
     const copy = template.cloneNode(true);
     copy.querySelector(".row").id=singlePerson.gsx$name.$t;
-    copy.querySelector("img").src=singlePerson.gsx$name.$t+".jpg";
+    copy.querySelector("img").src=singlePerson.gsx$name.$t+".png";
     copy.querySelector("h2").textContent=`${singlePerson.gsx$name.$t} ${singlePerson.gsx$surname.$t}`;
     copy.querySelector(".hashtags").innerHTML=`#${singlePerson.gsx$hashtag1.$t} <br /> #${singlePerson.gsx$hashtag2.$t} <br />#${singlePerson.gsx$hashtag3.$t}`;
     copy.querySelector("ol").id=singlePerson.gsx$name.$t+"List";

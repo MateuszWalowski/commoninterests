@@ -23,7 +23,7 @@
     float: left;
     padding: 15px;
     display: inline-block;
-
+    overflow: hidden;
 }
 
 html {
@@ -32,9 +32,10 @@ html {
 
 body {
     background-color: #000;
-    margin: 0;
+    margin:0;
     padding: 0;
     color: white;
+  margin-bottom: 70px;
 }
 .content{
     width: 100%;
@@ -129,16 +130,7 @@ li:hover {
     color: darkred;
 }
 
-.aside {
-    background-color: hsl(0, 0%, 40%);
-    padding: 0px;
-    color: #ffffff;
-    text-align: center;
-    font-size: 14px;
-    height: 515px;
-    margin-top: -30px;
-    height: 519px;
-}
+
 .news {
      background-color: hsl(0, 0, 0%, 40%);
     padding: 15px;
@@ -177,12 +169,22 @@ button {
 .col-2 {
     width: 35%;
     background-color: hsl(0, 0%, 40%);
-    height: auto;
+    height: 518px;
 }
 
 .col-3 {
     width: 40%;
     height: auto;
+      background-color: hsl(0, 0%, 40%);
+    padding: 15px;
+  margin-left: 15px;
+    margin-right: 15px;
+    text-align: center;
+    height: 518px;
+    margin-bottom: 15px;
+}
+.col-3 p {
+    margin-top: -20px;
 }
 
 .wave-wrapper {
@@ -300,16 +302,36 @@ grid-template-columns: 40% 60%;
     margin-right: auto;
     padding: 15px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 999px) {
 
-    /* For mobile phones: */
+    /* for smaller devices: */
     [class*="col-"] {
-        width: 100%;
+        width: 98%;
+        display: block;
+        margin: 15px;
+        margin-left: -40px;
+        margin-right: auto;
+
+    }
+    .col-topright {
+        margin-left: 40px;
+        margin-right: auto;
+    }
+    .col-rightone {
+        margin-left: 40px;
+        margin-right: auto;
+    }
+    .col-righttwo {
+        margin-left: 40px;
+        margin-right: auto;
     }
   .musicnews {
     display: grid;
   grid-template-columns: 100%
   }
+    .profile img {
+        width: 50%;
+    }
 
   .newsimage {
     max-width: 60%;
@@ -324,7 +346,13 @@ grid-template-columns: 40% 60%;
         width: 100%;
     }
     p {
-        font-size: 20px;
+        font-size: 30px;
     }
+    .hashtags {
+    line-height: 1.1;
+        margin-top: -20px;
+
 }
+
 }
+

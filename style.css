@@ -25,7 +25,7 @@ html {
 }
 
 body {
-    background-color: #242424;
+    background-color: #000;
     margin: 0;
     padding: 0;
     color: white
@@ -75,7 +75,7 @@ h2 {
 }
 
 .header {
-    background-color: hsl(0, 0%, 40%);
+    background-color: hsl(0, 0, 0%, 40%);
     color: #ffffff;
     padding: 10px;
     text-align: center;
@@ -95,8 +95,10 @@ h2 {
 .header a:hover{
     color: darkgreen;
 }
-.header:hover {
-    background-color: hsl(0, 0%, 45%);
+.name {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .profile img {
@@ -170,7 +172,9 @@ button {
 }
 
 .swap-on-hover {
-    width: 50%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 .wavelogo {

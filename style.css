@@ -169,8 +169,12 @@ button {
     width: 40%;
 }
 
-.col-half {
-    width: 50%
+.swap-on-hover {
+    width: 50%;
+
+}
+.wavelogo {
+    width: 100%
 }
 
 .col-topright {
